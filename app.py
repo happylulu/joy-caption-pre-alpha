@@ -7,6 +7,7 @@ from pathlib import Path
 import torch
 import torch.amp.autocast_mode
 from PIL import Image
+import os
 
 
 CLIP_PATH = "google/siglip-so400m-patch14-384"
@@ -14,6 +15,7 @@ VLM_PROMPT = "A descriptive caption for this image:\n"
 MODEL_PATH = "meta-llama/Meta-Llama-3.1-8B"
 CHECKPOINT_PATH = Path("h2vtfhad")
 TITLE = "<h1><center>Foo</center></h1>"
+HF_TOKEN = os.environ.get("HF_TOKEN", None)
 
 
 class ImageAdapter(nn.Module):
