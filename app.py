@@ -14,7 +14,8 @@ CLIP_PATH = "google/siglip-so400m-patch14-384"
 VLM_PROMPT = "A descriptive caption for this image:\n"
 MODEL_PATH = "meta-llama/Meta-Llama-3.1-8B"
 CHECKPOINT_PATH = Path("wpkklhc6")
-TITLE = "<h1><center>Foo</center></h1>"
+TITLE = "<h1><center>JoyCaption Pre-Alpha (2024-07-30a)</center></h1>"
+
 HF_TOKEN = os.environ.get("HF_TOKEN", None)
 
 
