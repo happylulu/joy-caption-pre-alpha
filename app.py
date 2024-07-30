@@ -119,7 +119,7 @@ with gr.Blocks() as demo:
 			run_button = gr.Button("Caption")
 		
 		with gr.Column():
-			output_caption = gr.Textbox(label="Caption", default="")
+			output_caption = gr.Textbox(label="Caption")
 	
 	run_button.click(fn=stream_chat, inputs=[input_image], outputs=[output_caption])
 
