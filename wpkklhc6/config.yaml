@@ -3,7 +3,7 @@ device_batch_size: 2
 batch_size: 256
 learning_rate: 0.001
 warmup_samples: 18000
-max_samples: 500000
+max_samples: 600000
 save_every: 50000
 test_every: 50000
 use_amp: true
@@ -19,7 +19,7 @@ adam_beta2: 0.999
 adam_eps: 1.0e-08
 adam_weight_decay: 0.0
 clip_grad_norm: 1.0
-dataset: fancyfeast/joy-captioning-20240720a
+dataset: fancyfeast/joy-captioning-20240729a
 clip_model: google/siglip-so400m-patch14-384
 text_model: meta-llama/Meta-Llama-3.1-8B
 resume: null

@@ -13,7 +13,7 @@ import os
 CLIP_PATH = "google/siglip-so400m-patch14-384"
 VLM_PROMPT = "A descriptive caption for this image:\n"
 MODEL_PATH = "meta-llama/Meta-Llama-3.1-8B"
-CHECKPOINT_PATH = Path("h2vtfhad")
+CHECKPOINT_PATH = Path("wpkklhc6")
 TITLE = "<h1><center>Foo</center></h1>"
 HF_TOKEN = os.environ.get("HF_TOKEN", None)
 
@@ -108,7 +108,7 @@ def stream_chat(input_image: Image.Image):
 
 	caption = tokenizer.batch_decode(generate_ids, skip_special_tokens=False, clean_up_tokenization_spaces=False)[0]
 
-	return [caption]
+	return caption.strip()
 
 
 with gr.Blocks() as demo:
